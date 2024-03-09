@@ -57,5 +57,8 @@ int main()
 	cube(&num4,4);
 	printf("cube=%lf",num4);
 	break;
+	default : 
+	printf("wrong data");
+	break ;
 	}
 }
