@@ -16,7 +16,7 @@ typedef struct
 
 int main()
 {
- 
+	printf("h [from 0 to 12]\nminutes [from 0 to 60]\nsecond[from 0 to 60 ]\n\n");
     time times[2];
     //start 1,stop2	
 	for(u8 i=0;i<2;i++)
@@ -29,8 +29,8 @@ int main()
 		scanf("%d",&times[i].second);	
 	}
 	printf("Diff:\n");
-	printf("hours=%d\n",times[0].hours-times[1].hours);
-	printf("minutes=%d\n",times[0].minutes-times[1].minutes);
-	printf("second=%d\n",times[0].second-times[1].second);
+	printf("hours=%d\n",abs(times[0].hours-times[1].hours));
+	printf("minutes=%d\n",abs(times[0].minutes-times[1].minutes));
+	printf("second=%d\n",abs(times[0].second-times[1].second));
 	
 }
