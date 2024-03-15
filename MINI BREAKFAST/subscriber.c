@@ -6,26 +6,25 @@
 #include "menu.h"
 
 
-	 typedef	struct INFO
-			{
+typedef	struct INFO
+{		
+	u8 Name[20];
+	u64 ID;
+	u64 Password;
+	u64 card;
 				
-				u8 Name[20];
-				u64 ID;
-				u64 Password;
-				u64 card;
-				
-			}info;	
+}info;	
 
-	info subscriber_info[100];
+info subscriber_info[100];
 	
 int Subscriber_info_check(u8 x,u8 NAME[50],u64 ID,u64 PASSWORD)
 {
 	
 	 if(x==1)
 	 {
-		 	u8 Size;
-			printf("Number-->\n");
-			scanf("%d",&Size);
+		u8 Size;
+		printf("Number-->\n");
+		scanf("%d",&Size);
 			
 			for(u8 i=0 ; i <(Size) ; i++)
 			{
@@ -47,9 +46,6 @@ int Subscriber_info_check(u8 x,u8 NAME[50],u64 ID,u64 PASSWORD)
 				fflush(stdin);
 				printf("\n3MALIA NAG7A\n\n");
 			}
-			
-	
-	   
 	 }	
 	 
 	 else if(x==0)
@@ -72,6 +68,7 @@ int Subscriber_info_check(u8 x,u8 NAME[50],u64 ID,u64 PASSWORD)
 	 }
 	 
 }
+
 int rsedbaki(int id,int sum)
 {
    for(u8 j=0 ; j<100 ; j++)

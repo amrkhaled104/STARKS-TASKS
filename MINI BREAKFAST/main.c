@@ -32,42 +32,30 @@ int main ()
 		{
 			if(login(1)==1)//هنا بتاكد ان المعلومات صح
 			{
-		        printf("                                                                    WELCOME                                                                         \n\n\n\n");
+		         printf("                                                                    WELCOME                                                                         \n\n\n\n");
 				 u8 x;
 				 printf("Add New Subscriber --> 1 \n\nEditing Menu --> 2\n\n");
 				 fflush(stdin);
 				 scanf("%d",&x);
 				 fflush(stdin);
-					 
 					 if(x==1)
 					 {
-						 
 						 if(Subscriber_info_check(1,"a",0,0)==0)
 						 {
 							 printf("3malia nag7a\n\n\n");
-						 }
-						 
-						 
+						 }	 
 					 }
-					 
 					 if(x==2)
 					 {
-						 
-						menu (); 
-						
+						menu (); 	
 					 }
-		 
 			}
 			
 			else
 			{
-				
-				printf("Wrong Information\n\n\n");
-				
-			}
-					
+				printf("Wrong Information\n\n\n");	
+			}		
 		}
-		
 	 else if(type==2)
 		{
 			u8 x;
@@ -78,7 +66,6 @@ int main ()
 			
 				if(x==1)
 				{
-					
 					print_menu();
 					int sum=payment();
 					printf(">>>>>> 7sabak= %d$\n",sum);
@@ -96,7 +83,7 @@ int main ()
 						printf("Cash-->>1\nCard-->2\n\n");scanf("%d",&n);
                         if(n==1)
 						{
-							printf("ElMAKANA Gahza l Est2bal money");
+							printf("ElMAKANA Gahza l Est2bal money\n");
 							
 						} 
                         if(n==2)
@@ -105,9 +92,6 @@ int main ()
 						 printf("If you want me to display the remaining balance in your account, please enter your ID.\n ");	scanf("%d",&id);
 						 printf("rasedak elan = %d$\n\n\n\n\n",rsedbaki(id,sum));
 						} 
- 						 
-							
-					
 					}
 					else
 					{
@@ -118,13 +102,6 @@ int main ()
 		else 
 		{
 			printf("plz enter right data\n\n\n");
-		}
-		
-		
-		
-		
-		
-		
-		
+		}	
 	}
 }
