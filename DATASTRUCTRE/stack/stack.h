@@ -1,7 +1,5 @@
-
 #ifndef Satck
 #define Satck
-#includes "main.h"
 #define MAXSTACK 100 
 typedef struct
 {
@@ -31,12 +29,4 @@ int stacksize(stack *);
 void clearstack(stack *);
 
 void traversestack(stack *,void(*pf)(Structentry));
-
-
-
-
-
-
-
-
 #endif 

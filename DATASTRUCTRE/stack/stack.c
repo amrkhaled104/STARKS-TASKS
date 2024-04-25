@@ -1,6 +1,4 @@
-
 #include<stdio.h>
-#include "main.h"
 #include "stack.h"
 void createstack(stack *ps)
 {
